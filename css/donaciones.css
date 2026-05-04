@@ -1,0 +1,128 @@
+.donations-hero {
+    background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/donations-bg.jpg') center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.donations-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.usage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.usage-card {
+    background: var(--white);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.usage-card:hover {
+    transform: translateY(-10px);
+}
+
+.usage-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.usage-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.example-item {
+    background: var(--white);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px dashed var(--primary-color);
+}
+
+.example-item h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.method-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.method-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.method-header h3 {
+    color: var(--primary-color);
+}
+
+.tag {
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.method-card p {
+    margin-bottom: 0.5rem;
+    font-family: monospace;
+    background: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.transparency-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.transparency-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.transparency-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .donations-hero h1 {
+        font-size: 2.2rem;
+    }
+}
