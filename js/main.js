@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (burger) {
         burger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+    }
+
+    // Close menu when clicking a link
+    if (navLinks) {
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                burger.classList.remove('active');
+            });
         });
     }
 
