@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/contacto", "destination": "/pages/contacto" },
+    { "source": "/about", "destination": "/pages/about" },
+    { "source": "/media", "destination": "/pages/media" },
+    { "source": "/donaciones", "destination": "/pages/donaciones" }
+  ]
+}
