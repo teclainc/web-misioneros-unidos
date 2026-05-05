@@ -87,6 +87,12 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .founder-text {
+        order: 1;
+    }
+    .founder-img {
+        order: 2;
+    }
     .founder-text .section-title {
         text-align: center;
     }

@@ -1,5 +1,5 @@
 .donations-hero {
-    background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/donations-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/7.jpg') center/cover no-repeat;
     height: 40vh;
     display: flex;
     align-items: center;
@@ -103,6 +103,10 @@
     background: #f0f0f0;
     padding: 0.5rem;
     border-radius: 5px;
+}
+
+.method-card .btn {
+    margin-top: auto;
 }
 
 .transparency-content {

@@ -1,5 +1,5 @@
 .contact-hero {
-    background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/contact-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/3.jpg') center/cover no-repeat;
     height: 30vh;
     display: flex;
     align-items: center;
@@ -107,6 +107,7 @@
     justify-content: center;
     border-radius: 50%;
     flex-shrink: 0;
+    color: var(--primary-color);
 }
 
 .info-text h3 {
@@ -129,21 +130,26 @@
 }
 
 .social-icons a {
-    width: 45px;
-    height: 45px;
-    background: var(--primary-color);
+    width: 35px;
+    height: 35px;
+    background: #444;
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-weight: bold;
     transition: var(--transition);
 }
 
+.social-icons a svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 .social-icons a:hover {
-    background: var(--primary-dark);
-    transform: scale(1.1);
+    background: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
