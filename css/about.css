@@ -1,16 +1,11 @@
 .about-hero {
     background: linear-gradient(rgba(4, 117, 107, 0.7), rgba(4, 117, 107, 0.7)), url('../assets/images/4.jpg') center/cover no-repeat;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-}
-
-.about-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .history-text {

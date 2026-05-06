@@ -1,15 +1,11 @@
 .contact-hero {
     background: linear-gradient(rgba(4, 117, 107, 0.8), rgba(4, 117, 107, 0.8)), url('../assets/images/3.jpg') center/cover no-repeat;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-}
-
-.contact-hero h1 {
-    font-size: 3rem;
 }
 
 .contact-grid {

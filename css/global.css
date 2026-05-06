@@ -210,6 +210,20 @@ footer {
 }
 
 /* Common Components */
+.hero-content-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.hero-content-desc {
+    font-size: 1.2rem;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
