@@ -19,6 +19,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Copy CVU Logic for Donations Page
+    const copyCvuBtn = document.getElementById('copy-cvu-btn');
+    const cvuTextEl = document.getElementById('cvu-text');
+
+    if (copyCvuBtn && cvuTextEl) {
+        copyCvuBtn.addEventListener('click', async () => {
+            const cvuValue = cvuTextEl.textContent.replace('CVU: ', '').trim();
+            try {
+                await navigator.clipboard.writeText(cvuValue);
+                const originalText = copyCvuBtn.textContent;
+                copyCvuBtn.textContent = '¡Copiado!';
+                copyCvuBtn.style.backgroundColor = 'var(--success-color)';
+                
+                setTimeout(() => {
+                    copyCvuBtn.textContent = originalText;
+                    copyCvuBtn.style.backgroundColor = '';
+                }, 2000);
+            } catch (err) {
+                console.error('Error copying CVU:', err);
+                alert('No se pudo copiar el CVU automáticamente.');
+            }
+        });
+    }
+
     // Mark active link based on current path
     const currentPath = window.location.pathname;
     const links = document.querySelectorAll('.nav-links a');
