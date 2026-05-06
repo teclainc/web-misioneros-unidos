@@ -209,8 +209,81 @@ footer {
     }
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-switch {
+    display: block;
+    width: 24px;
+    height: 16px;
+    border-radius: 2px;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    padding: 0;
+}
+
+.lang-switch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+.lang-switch.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 0;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        max-height: 600px;
+        padding: 1rem 0;
+    }
+
+    .nav-links a:not(.lang-switch) {
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-links li.lang-item {
+        padding: 1.5rem 0;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
 /* Common Components */
 .hero-content-title {
+
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--white);
@@ -282,38 +355,4 @@ footer {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        padding: 0;
-        text-align: center;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-    }
-
-    .nav-links.active {
-        max-height: 500px;
-        padding: 1rem 0;
-    }
-
-    .nav-links a {
-        padding: 1rem;
-        width: 100%;
-        border-bottom: 1px solid #eee;
-    }
-
-    .burger {
-        display: block;
-    }
 }

@@ -17,12 +17,23 @@
                     <img src="../assets/images/logo2.png" alt="Misioneros Unidos Logo">
                 </a>
                 <ul class="nav-links">
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/about" class="active">Nosotros</a></li>
-                            <li><a href="/media">Media</a></li>
-                            <li><a href="/donaciones">Donaciones</a></li>
-                            <li><a href="/contacto">Contacto</a></li>
-                </ul>
+                             <li><a href="/" data-i18n="nav.inicio">Inicio</a></li>
+                             <li><a href="/about" class="active" data-i18n="nav.nosotros">Nosotros</a></li>
+                             <li><a href="/media" data-i18n="nav.media">Media</a></li>
+                             <li><a href="/donaciones" data-i18n="nav.donaciones">Donaciones</a></li>
+                             <li><a href="/contacto" data-i18n="nav.contacto">Contacto</a></li>
+                             <li class="lang-item">
+                                 <div class="lang-switcher">
+                                     <a href="#" class="lang-switch active" data-lang="es">
+                                         <img src="https://flagcdn.com/w40/ar.png" alt="Español">
+                                     </a>
+                                     <a href="#" class="lang-switch" data-lang="en">
+                                         <img src="https://flagcdn.com/w40/us.png" alt="English">
+                                     </a>
+                                 </div>
+                             </li>
+                         </ul>
+
                 <div class="burger">
                     <span></span>
                     <span></span>
@@ -35,36 +46,36 @@
     <main>
         <section class="about-hero">
             <div class="container">
-                <h1 class="hero-content-title">Sobre Nosotros</h1>
-                <p class="hero-content-desc">Comprometidos con el servicio y la transformación social.</p>
+                <h1 class="hero-content-title" data-i18n="about.hero_title">Sobre Nosotros</h1>
+                <p class="hero-content-desc" data-i18n="about.hero_desc">Comprometidos con el servicio y la transformación social.</p>
             </div>
         </section>
-
+        
         <section class="full-history section-padding">
             <div class="container">
                 <div class="section-title">
-                    <h2>Nuestra Historia</h2>
+                    <h2 data-i18n="about.history_title">Nuestra Historia</h2>
                 </div>
                 <div class="history-text">
-                    <p>Desde el año 2011, Misioneros Unidos nació de un deseo profundo de servir a los más necesitados en Isidro Casanova y sus alrededores. Lo que comenzó como una iniciativa local, impulsada por la fe y el amor al prójimo, ha crecido hasta convertirse en una Asociación Civil dedicada a la acción social directa.</p>
-                    <p>A lo largo de los años, hemos enfrentado desafíos, pero la satisfacción de ver vidas transformadas ha sido nuestro motor. Nos hemos especializado en misiones que no solo llevan ayuda material, sino también apoyo espiritual y emocional, reconociendo que la verdadera transformación comienza en el corazón.</p>
-                    <p>Hoy, Misioneros Unidos es un referente de solidaridad en nuestra comunidad, coordinando esfuerzos entre voluntarios y donantes para llegar a los rincones más olvidados.</p>
+                    <p data-i18n="about.history_text_1">Desde el año 2011, Misioneros Unidos nació de un deseo profundo de servir a los más necesitados en Isidro Casanova y sus alrededores. Lo que comenzó como una iniciativa local, impulsada por la fe y el amor al prójimo, ha crecido hasta convertirse en una Asociación Civil dedicada a la acción social directa.</p>
+                    <p data-i18n="about.history_text_2">A lo largo de los años, hemos enfrentado desafíos, pero la satisfacción de ver vidas transformadas ha sido nuestro motor. Nos hemos especializado en misiones que no solo llevan ayuda material, sino también apoyo espiritual y emocional, reconociendo que la verdadera transformación comienza en el corazón.</p>
+                    <p data-i18n="about.history_text_3">Hoy, Misioneros Unidos es un referente de solidaridad en nuestra comunidad, coordinando esfuerzos entre voluntarios y donantes para llegar a los rincones más olvidados.</p>
                 </div>
             </div>
         </section>
-
+        
         <section class="vision-mission section-padding" style="background-color: var(--secondary-color);">
             <div class="container">
                 <div class="vm-grid">
                         <div class="vm-card">
                             <div class="vm-icon"></div>
-                            <h3>Nuestra Misión</h3>
-                            <p>Brindar asistencia integral a personas en situación de vulnerabilidad, promoviendo la dignidad humana a través de misiones sociales, apoyo alimentario y acompañamiento espiritual.</p>
+                            <h3 data-i18n="about.mission_title">Nuestra Misión</h3>
+                            <p data-i18n="about.mission_text">Brindar asistencia integral a personas en situación de vulnerabilidad, promoviendo la dignidad humana a través de misiones sociales, apoyo alimentario y acompañamiento espiritual.</p>
                         </div>
                         <div class="vm-card">
                             <div class="vm-icon"></div>
-                            <h3>Nuestra Visión</h3>
-                            <p>Ser una organización líder en acción social y misiones, reconocida por su transparencia, eficiencia y capacidad de generar un impacto positivo y sostenible en la sociedad.</p>
+                            <h3 data-i18n="about.vision_title">Nuestra Visión</h3>
+                            <p data-i18n="about.vision_text">Ser una organización líder en acción social y misiones, reconocida por su transparencia, eficiencia y capacidad de generar un impacto positivo y sostenible en la sociedad.</p>
                         </div>
                     </div>
                 </div>
@@ -77,26 +88,31 @@
                             <img src="../assets/images/5.jpg" alt="Jonatan Pereda" onerror="this.src='https://via.placeholder.com/400x500?text=Jonatan+Pereda'">
                         </div>
                         <div class="founder-text">
-                            <h2 class="section-title">Nuestro Fundador</h2>
-                            <h3>Jonatan Pereda</h3>
-                            <p>Jonatan Pereda es el visionario detrás de Misioneros Unidos. Con una vocación inquebrantable por el servicio, Jonatan fundó el proyecto en 2011 con la convicción de que nadie debe sentirse solo en su lucha contra la pobreza y la desesperanza.</p>
-                            <p>A través de su liderazgo, ha guiado a cientos de voluntarios en misiones locales e internacionales, siempre manteniendo el enfoque en la humildad, el amor y la transparencia. Su compromiso con la comunidad de Isidro Casanova ha sido la piedra angular sobre la cual se ha construido todo el trabajo de la Asociación.</p>
+                            <h2 class="section-title" data-i18n="about.founder_title">Nuestro Fundador</h2>
+                            <h3 data-i18n="about.founder_name">Jonatan Pereda</h3>
+                            <p data-i18n="about.founder_text_1">Jonatan Pereda es el visionario detrás de Misioneros Unidos. Con una vocación inquebrantable por el servicio, Jonatan fundó el proyecto en 2011 con la convicción de que nadie debe sentirse solo en su lucha contra la pobreza y la desesperanza.</p>
+                            <p data-i18n="about.founder_text_2">A través de su liderazgo, ha guiado a cientos de voluntarios en misiones locales e internacionales, siempre manteniendo el enfoque en la humildad, el amor y la transparencia. Su compromiso con la comunidad de Isidro Casanova ha sido la piedra angular sobre la cual se ha construido todo el trabajo de la Asociación.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Misioneros Unidos</h3>
-                    <p>Llevando esperanza y amor al prójimo desde 2011.</p>
+                    <h3 data-i18n="footer.title">Misioneros Unidos</h3>
+                    <p data-i18n="footer.description">Llevando esperanza y amor al prójimo desde 2011.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Siguenos</h3>
+                    <h3 data-i18n="footer.follow_us">Siguenos</h3>
                     <div class="footer-socials">
+
                         <a href="https://instagram.com/misionerosunidosoficial" target="_blank" title="Instagram">
                             <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
@@ -109,17 +125,19 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p>Av. Juan Manuel de Rosas 7840, Isidro Casanova</p>
-                    <p>Tel: 1156334578</p>
+                    <h3 data-i18n="footer.contact_title">Contacto</h3>
+                    <p data-i18n="footer.address">Av. Juan Manuel de Rosas 7840, Isidro Casanova</p>
+                    <p data-i18n="footer.phone">Tel: 1156334578</p>
                 </div>
+
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Asociación Civil Misioneros Unidos de Isidro Casanova. Todos los derechos reservados.</p>
+                <p data-i18n="footer.copyright">&copy; 2026 Asociación Civil Misioneros Unidos de Isidro Casanova. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/i18n.js"></script>
 </body>
 </html>

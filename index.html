@@ -17,12 +17,23 @@
                     <img src="assets/images/logo2.png" alt="Misioneros Unidos Logo">
                 </a>
                 <ul class="nav-links">
-                            <li><a href="/" class="active">Inicio</a></li>
-                            <li><a href="/about">Nosotros</a></li>
-                            <li><a href="/media">Media</a></li>
-                            <li><a href="/donaciones">Donaciones</a></li>
-                            <li><a href="/contacto">Contacto</a></li>
-                </ul>
+                             <li><a href="/" class="active" data-i18n="nav.inicio">Inicio</a></li>
+                             <li><a href="/about" data-i18n="nav.nosotros">Nosotros</a></li>
+                             <li><a href="/media" data-i18n="nav.media">Media</a></li>
+                             <li><a href="/donaciones" data-i18n="nav.donaciones">Donaciones</a></li>
+                             <li><a href="/contacto" data-i18n="nav.contacto">Contacto</a></li>
+                             <li class="lang-item">
+                                 <div class="lang-switcher">
+                                     <a href="#" class="lang-switch active" data-lang="es">
+                                         <img src="https://flagcdn.com/w40/ar.png" alt="Español">
+                                     </a>
+                                     <a href="#" class="lang-switch" data-lang="en">
+                                         <img src="https://flagcdn.com/w40/us.png" alt="English">
+                                     </a>
+                                 </div>
+                             </li>
+                         </ul>
+
                 <div class="burger">
                     <span></span>
                     <span></span>
@@ -36,11 +47,11 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Llevando Esperanza a Quienes Más lo Necesitan</h1>
-                    <p>Desde 2011, trabajamos incansablemente en misiones y ayuda social para transformar la realidad de nuestra comunidad y más allá.</p>
+                    <h1 data-i18n="index.hero_title">Llevando Esperanza a Quienes Más lo Necesitan</h1>
+                    <p data-i18n="index.hero_desc">Desde 2011, trabajamos incansablemente en misiones y ayuda social para transformar la realidad de nuestra comunidad y más allá.</p>
                     <div class="hero-btns">
-                        <a href="pages/donaciones.html" class="btn btn-primary">Donar ahora</a>
-                        <a href="pages/about.html" class="btn btn-outline-white">Conocernos más</a>
+                        <a href="pages/donaciones.html" class="btn btn-primary" data-i18n="index.hero_btn_donate">Donar ahora</a>
+                        <a href="pages/about.html" class="btn btn-outline-white" data-i18n="index.hero_btn_about">Conocernos más</a>
                     </div>
                 </div>
             </div>
@@ -50,9 +61,9 @@
             <div class="container">
                 <div class="welcome-grid">
                     <div class="welcome-text">
-                        <h2 class="section-title" style="text-align: left;">Bienvenidos a Misioneros Unidos</h2>
-                        <p>Somos una organización dedicada al servicio desinteresado, impulsada por el amor y la fe. Nuestra misión es brindar apoyo material, espiritual y emocional a las familias más vulnerables, llevando un mensaje de esperanza y transformación.</p>
-                        <p>En Isidro Casanova y diversas regiones, hemos construido puentes de solidaridad que permiten que la ayuda llegue directamente a quienes realmente la necesitan.</p>
+                        <h2 class="section-title" style="text-align: left;" data-i18n="index.welcome_title">Bienvenidos a Misioneros Unidos</h2>
+                        <p data-i18n="index.welcome_text_1">Somos una organización dedicada al servicio desinteresado, impulsada por el amor y la fe. Nuestra misión es brindar apoyo material, espiritual y emocional a las familias más vulnerables, llevando un mensaje de esperanza y transformación.</p>
+                        <p data-i18n="index.welcome_text_2">En Isidro Casanova y diversas regiones, hemos construido puentes de solidaridad que permiten que la ayuda llegue directamente a quienes realmente la necesitan.</p>
                     </div>
                     <div class="welcome-img">
                         <img src="assets/images/2.jpg" alt="Misioneros Unidos Ayudando" onerror="this.src='https://via.placeholder.com/600x400?text=Misioneros+Unidos'">
@@ -65,32 +76,33 @@
             <div class="container">
                 <div class="mission-trip-content">
                     <div class="mission-trip-text">
-                        <h2 class="section-title" style="text-align: center; color: var(--white);">Próximo Viaje Misionero: Salta 2026</h2>
-                        <p class="mission-trip-subtitle">Tratagal - Santa Victoria Este | 5 al 14 de Junio</p>
-                        
-                        <div id="countdown" class="countdown">
-                            <div class="countdown-item">
-                                <span id="days">00</span>
-                                <small>Días</small>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="hours">00</span>
-                                <small>Horas</small>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="minutes">00</span>
-                                <small>Minutos</small>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="seconds">00</span>
-                                <small>Segundos</small>
-                            </div>
-                        </div>
+                         <h2 class="section-title" style="text-align: center; color: var(--white);" data-i18n="index.trip_title">Próximo Viaje Misionero: Salta 2026</h2>
+                         <p class="mission-trip-subtitle" data-i18n="index.trip_subtitle">Tratagal - Santa Victoria Este | 5 al 14 de Junio</p>
+                         
+                         <div id="countdown" class="countdown">
+                             <div class="countdown-item">
+                                 <span id="days">00</span>
+                                 <small data-i18n="index.countdown_days">Días</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="hours">00</span>
+                                 <small data-i18n="index.countdown_hours">Horas</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="minutes">00</span>
+                                 <small data-i18n="index.countdown_minutes">Minutos</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="seconds">00</span>
+                                 <small data-i18n="index.countdown_seconds">Segundos</small>
+                             </div>
+                         </div>
+ 
+                         <div class="mission-trip-btns">
+                             <a href="pages/donaciones.html" class="btn btn-primary" data-i18n="index.trip_btn_donate">Quiero donar</a>
+                             <a href="https://wa.me/5491156334578?text=Hola,%20me%20interesa%20sumarme%20al%20viaje%20misionero%20a%20Salta%202026.%20%C2%A1Me%20dan%20m%C3%A1s%20informaci%C3%B3n?" class="btn btn-primary" target="_blank" data-i18n="index.trip_btn_go">Quiero ir</a>
+                         </div>
 
-                        <div class="mission-trip-btns">
-                            <a href="pages/donaciones.html" class="btn btn-primary">Quiero donar</a>
-                            <a href="https://wa.me/5491156334578?text=Hola,%20me%20interesa%20sumarme%20al%20viaje%20misionero%20a%20Salta%202026.%20%C2%A1Me%20dan%20m%C3%A1s%20informaci%C3%B3n?" class="btn btn-primary" target="_blank">Quiero ir</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -98,33 +110,35 @@
 
         <section class="impact section-padding">
             <div class="container">
-                <div class="section-title">
-                    <h2>Nuestro Impacto</h2>
-                    <p>Resultados reales que cambian vidas</p>
-                </div>
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3>+10 Años</h3>
-                        <p>De experiencia en misiones y trabajo social.</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3>Miles de Familias</h3>
-                        <p>Asistidas a través de nuestros programas de ayuda.</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3>Comunidad Unida</h3>
-                        <p>Voluntarios comprometidos con la transformación social.</p>
-                    </div>
-                </div>
+                 <div class="section-title">
+                     <h2 data-i18n="index.impact_title">Nuestro Impacto</h2>
+                     <p data-i18n="index.impact_subtitle">Resultados reales que cambian vidas</p>
+                 </div>
+                 <div class="impact-grid">
+                     <div class="impact-card">
+                         <h3 data-i18n="index.impact_card_1_title">+10 Años</h3>
+                         <p data-i18n="index.impact_card_1_text">De experiencia en misiones y trabajo social.</p>
+                     </div>
+                     <div class="impact-card">
+                         <h3 data-i18n="index.impact_card_2_title">Miles de Familias</h3>
+                         <p data-i18n="index.impact_card_2_text">Asistidas a través de nuestros programas de ayuda.</p>
+                     </div>
+                     <div class="impact-card">
+                         <h3 data-i18n="index.impact_card_3_title">Comunidad Unida</h3>
+                         <p data-i18n="index.impact_card_3_text">Voluntarios comprometidos con la transformación social.</p>
+                     </div>
+                 </div>
+
             </div>
         </section>
 
         <section class="video-section section-padding" style="background-color: #f9f9f9;">
             <div class="container">
-                <div class="section-title">
-                    <h2>Mira Nuestro Trabajo</h2>
-                    <p>Testimonios y misiones en video</p>
-                </div>
+                 <div class="section-title">
+                     <h2 data-i18n="index.video_title">Mira Nuestro Trabajo</h2>
+                     <p data-i18n="index.video_subtitle">Testimonios y misiones en video</p>
+                 </div>
+
                 <div class="video-container">
                         <iframe 
                             width="560" 
@@ -143,13 +157,17 @@
     <footer>
         <div class="container">
             <div class="footer-content">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Misioneros Unidos</h3>
-                    <p>Llevando esperanza y amor al prójimo desde 2011.</p>
+                    <h3 data-i18n="footer.title">Misioneros Unidos</h3>
+                    <p data-i18n="footer.description">Llevando esperanza y amor al prójimo desde 2011.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Siguenos</h3>
+                    <h3 data-i18n="footer.follow_us">Siguenos</h3>
                     <div class="footer-socials">
+
                         <a href="https://instagram.com/misionerosunidosoficial" target="_blank" title="Instagram">
                             <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
@@ -161,18 +179,21 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p>Av. Juan Manuel de Rosas 7840, Isidro Casanova</p>
-                    <p>Tel: 1156334578</p>
-                </div>
+                 <div class="footer-section">
+                     <h3 data-i18n="footer.contact_title">Contacto</h3>
+                     <p data-i18n="footer.address">Av. Juan Manuel de Rosas 7840, Isidro Casanova</p>
+                     <p data-i18n="footer.phone">Tel: 1156334578</p>
+                 </div>
+
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Asociación Civil Misioneros Unidos de Isidro Casanova. Todos los derechos reservados.</p>
-            </div>
+             <div class="footer-bottom">
+                 <p data-i18n="footer.copyright">&copy; 2026 Asociación Civil Misioneros Unidos de Isidro Casanova. Todos los derechos reservados.</p>
+             </div>
+
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>
