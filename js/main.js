@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cvuTextEl = document.getElementById('cvu-text');
 
     if (copyCvuBtn && cvuTextEl) {
-        copyCvuBtn.addEventListener('click', async () => {
+        copyCvuBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
             const cvuValue = cvuTextEl.textContent.replace('CVU: ', '').trim();
             try {
                 await navigator.clipboard.writeText(cvuValue);
