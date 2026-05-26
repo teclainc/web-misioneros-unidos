@@ -8,7 +8,8 @@
     --white: #ffffff;
     --error-color: #d9534f;
     --success-color: #5cb85c;
-    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'DM Sans', 'Segoe UI', sans-serif;
+    --font-body: 'Nunito Sans', 'Segoe UI', sans-serif;
     --transition: all 0.3s ease;
 }
 
@@ -19,10 +20,16 @@
 }
 
 body {
-    font-family: var(--font-main);
+    font-family: var(--font-body);
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 a {

@@ -49,6 +49,7 @@
         "history_text_1": "Since 2011, Misioneros Unidos was born from a deep desire to serve the most needy in Isidro Casanova and its surroundings. What began as a local initiative, driven by faith and love for others, has grown into a Civil Association dedicated to direct social action.",
         "history_text_2": "Over the years, we have faced challenges, but the satisfaction of seeing lives transformed has been our driving force. We have specialized in missions that bring not only material aid, but also spiritual and emotional support, recognizing that true transformation begins in the heart.",
         "history_text_3": "Today, Misioneros Unidos is a benchmark of solidarity in our community, coordinating efforts between volunteers and donors to reach the most forgotten corners.",
+        "vision_mission_title": "Mission & Vision",
         "mission_title": "Our Mission",
         "mission_text": "To provide comprehensive assistance to people in situations of vulnerability, promoting human dignity through social missions, food support and spiritual accompaniment.",
         "vision_title": "Our Vision",
@@ -71,6 +72,7 @@
         "form_option_help": "Request Help",
         "form_option_other": "Other",
         "form_submit": "Send Message",
+        "info_title": "Contact Information",
         "info_location": "Location",
         "info_phone": "Phone",
         "info_email": "Email"

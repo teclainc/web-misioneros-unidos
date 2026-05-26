@@ -49,6 +49,7 @@
         "history_text_1": "Desde el año 2011, Misioneros Unidos nació de un deseo profundo de servir a los más necesitados en Isidro Casanova y sus alrededores. Lo que comenzó como una iniciativa local, impulsada por la fe y el amor al prójimo, ha crecido hasta convertirse en una Asociación Civil dedicada a la acción social directa.",
         "history_text_2": "A lo largo de los años, hemos enfrentado desafíos, pero la satisfacción de ver vidas transformadas ha sido nuestro motor. Nos hemos especializado en misiones que no solo llevan ayuda material, sino también apoyo espiritual y emocional, reconociendo que la verdadera transformación comienza en el corazón.",
         "history_text_3": "Hoy, Misioneros Unidos es un referente de solidaridad en nuestra comunidad, coordinando esfuerzos entre voluntarios y donantes para llegar a los rincones más olvidados.",
+        "vision_mission_title": "Misión y Visión",
         "mission_title": "Nuestra Misión",
         "mission_text": "Brindar asistencia integral a personas en situación de vulnerabilidad, promoviendo la dignidad humana a través de misiones sociales, apoyo alimentario y acompañamiento espiritual.",
         "vision_title": "Nuestra Visión",
@@ -71,6 +72,7 @@
         "form_option_help": "Solicitar Ayuda",
         "form_option_other": "Otro",
         "form_submit": "Enviar Mensaje",
+        "info_title": "Información de Contacto",
         "info_location": "Ubicación",
         "info_phone": "Teléfono",
         "info_email": "Correo"
