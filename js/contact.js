@@ -18,16 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 const group = input.parentElement;
                 if (!input.value.trim()) {
                     group.classList.add('error');
+                    input.setAttribute('aria-invalid', 'true');
                     isValid = false;
                 } else if (input.type === 'email' && !validateEmail(input.value)) {
                     group.classList.add('error');
+                    input.setAttribute('aria-invalid', 'true');
                     isValid = false;
                 } else {
                     group.classList.remove('error');
+                    input.removeAttribute('aria-invalid');
                 }
             });
 
-            if (isValid) {
+            if (!isValid) {
+                const firstError = contactForm.querySelector('[aria-invalid="true"]');
+                if (firstError) firstError.focus();
+                return;
+            }
                 // Collect form data
                 const formData = {
                     name: document.getElementById('name').value,

@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (burger) {
         burger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.toggle('active');
             burger.classList.toggle('active');
+            burger.setAttribute('aria-expanded', isActive);
+            burger.setAttribute('aria-label', isActive ? 'Cerrar menú' : 'Abrir menú');
         });
     }
 
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 burger.classList.remove('active');
+                burger.setAttribute('aria-expanded', 'false');
+                burger.setAttribute('aria-label', 'Abrir menú');
             });
         });
     }
