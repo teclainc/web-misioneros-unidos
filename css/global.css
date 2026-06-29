@@ -196,7 +196,7 @@ footer {
     text-align: center;
     padding-top: 1rem;
     font-size: 0.8rem;
-    color: #888;
+    color: #aaa;
 }
 
 /* Skip Link */
@@ -219,8 +219,19 @@ footer {
     top: 0;
 }
 
-/* Focus Visible */
+/* Prevent sticky header from hiding focused/targeted elements */
+:target,
+#main-content:focus {
+    scroll-margin-top: 80px;
+}
+
 :focus {
+    scroll-margin-top: 80px;
+    scroll-margin-bottom: 20px;
+}
+
+/* Focus Visible */
+:focus:not(:focus-visible) {
     outline: none;
 }
 

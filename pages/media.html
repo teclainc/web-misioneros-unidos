@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Galería de fotos y videos de las misiones de Misioneros Unidos.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://web-misioneros-unidos.vercel.app/media">
+    <link rel="alternate" hreflang="es" href="https://web-misioneros-unidos.vercel.app/media">
+    <link rel="alternate" hreflang="en" href="https://web-misioneros-unidos.vercel.app/media">
+    <link rel="alternate" hreflang="x-default" href="https://web-misioneros-unidos.vercel.app/media">
     <title>Media | Misioneros Unidos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +47,7 @@
                 <ul class="nav-links" id="nav-list">
                              <li><a href="/" data-i18n="nav.inicio">Inicio</a></li>
                              <li><a href="/about" data-i18n="nav.nosotros">Nosotros</a></li>
-                             <li><a href="/media" class="active" data-i18n="nav.media">Media</a></li>
+                             <li><a href="/media" class="active" aria-current="page" data-i18n="nav.media">Media</a></li>
                              <li><a href="/donaciones" data-i18n="nav.donaciones">Donaciones</a></li>
                              <li><a href="/contacto" data-i18n="nav.contacto">Contacto</a></li>
                              <li class="lang-item">
@@ -99,8 +104,11 @@
                         <div class="slide"><img src="../assets/images/media/m14.jpg" alt="Celebración comunitaria durante misión"></div>
                         <div class="slide"><img src="../assets/images/media/m15.jpg" alt="Grupo de misioneros y voluntarios"></div>
                     </div>
-                    <button class="carousel-btn prev" id="prevBtn" aria-label="Imagen anterior">❮</button>
-                    <button class="carousel-btn next" id="nextBtn" aria-label="Imagen siguiente">❯</button>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" id="prevBtn" aria-label="Imagen anterior">❮</button>
+                        <button class="carousel-btn pause" id="pauseBtn" aria-label="Pausar carrusel" title="Pausar">⏸</button>
+                        <button class="carousel-btn next" id="nextBtn" aria-label="Imagen siguiente">❯</button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -62,13 +62,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const carouselSlides = document.getElementById('carouselSlides');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
 
     if (carouselSlides && prevBtn && nextBtn) {
         let currentIndex = 0;
+        let autoSlideInterval = null;
+        let isPaused = false;
         const totalSlides = carouselSlides.children.length;
 
         const updateCarousel = () => {
             carouselSlides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        };
+
+        const startAutoSlide = () => {
+            autoSlideInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+        };
+
+        const stopAutoSlide = () => {
+            if (autoSlideInterval) {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = null;
+            }
         };
 
         nextBtn.addEventListener('click', () => {
@@ -81,10 +98,39 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCarousel();
         });
 
-        // Auto-slide every 5 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-        }, 5000);
+        if (pauseBtn) {
+            pauseBtn.addEventListener('click', () => {
+                if (isPaused) {
+                    startAutoSlide();
+                    pauseBtn.setAttribute('aria-label', 'Pausar carrusel');
+                    pauseBtn.innerHTML = '⏸';
+                } else {
+                    stopAutoSlide();
+                    pauseBtn.setAttribute('aria-label', 'Reanudar carrusel');
+                    pauseBtn.innerHTML = '▶';
+                }
+                isPaused = !isPaused;
+            });
+
+            // Pause on hover
+            carouselSlides.parentElement.addEventListener('mouseenter', () => {
+                if (!isPaused) stopAutoSlide();
+            });
+
+            carouselSlides.parentElement.addEventListener('mouseleave', () => {
+                if (!isPaused) startAutoSlide();
+            });
+
+            // Pause when focus enters the carousel
+            carouselSlides.parentElement.addEventListener('focusin', () => {
+                if (!isPaused) stopAutoSlide();
+            });
+
+            carouselSlides.parentElement.addEventListener('focusout', () => {
+                if (!isPaused) startAutoSlide();
+            });
+        }
+
+        startAutoSlide();
     }
 });
