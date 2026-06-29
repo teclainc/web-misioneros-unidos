@@ -42,7 +42,7 @@
         <div class="container">
             <nav aria-label="Navegación principal">
                 <a href="../index.html" class="logo">
-                    <img src="../assets/images/logo2.png" alt="Misioneros Unidos Logo">
+                    <img src="../assets/images/logo2.png" alt="Misioneros Unidos Logo" width="200" height="65">
                 </a>
                 <ul class="nav-links" id="nav-list">
                              <li><a href="/" data-i18n="nav.inicio">Inicio</a></li>
@@ -53,10 +53,10 @@
                              <li class="lang-item">
                                  <div class="lang-switcher">
                                      <a href="#" class="lang-switch active" data-lang="es" aria-label="Cambiar a Español">
-                                         <img src="https://flagcdn.com/w40/ar.png" alt="Bandera Argentina" aria-hidden="true">
+                                         <img src="https://flagcdn.com/w40/ar.png" alt="Bandera Argentina" width="24" height="18" aria-hidden="true">
                                      </a>
                                      <a href="#" class="lang-switch" data-lang="en" aria-label="Switch to English">
-                                         <img src="https://flagcdn.com/w40/us.png" alt="Bandera Estados Unidos" aria-hidden="true">
+                                         <img src="https://flagcdn.com/w40/us.png" alt="Bandera Estados Unidos" width="24" height="18" aria-hidden="true">
                                      </a>
                                  </div>
                              </li>
@@ -83,7 +83,8 @@
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-form-container">
-                         <form id="contactForm" novalidate>
+                        <div id="error-summary" class="error-summary" role="alert" aria-live="assertive" hidden></div>
+                        <form id="contactForm" novalidate>
                              <div class="form-group">
                                  <label for="name" data-i18n="contact.form_name">Nombre Completo</label>
                                  <input type="text" id="name" name="name" required placeholder="Ej. Juan Pérez" aria-describedby="name-error">
@@ -150,8 +151,6 @@
                         </div>
                         
                     </div>
-                        
-                    </div>
                 </div>
             </div>
         </section>
@@ -194,7 +193,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../js/i18n.js"></script>
     <script src="../js/contact.js"></script>
 </body>

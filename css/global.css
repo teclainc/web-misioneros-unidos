@@ -93,9 +93,11 @@ nav {
     display: none;
     cursor: pointer;
     width: 30px;
-    height: 20px;
+    height: 24px;
     position: relative;
     z-index: 1001;
+    background: none;
+    border: none;
 }
 
 .burger span {
@@ -110,12 +112,12 @@ nav {
     transition: var(--transition);
 }
 
-.burger span:nth-child(1) { top: 0px; }
-.burger span:nth-child(2) { top: 8px; }
-.burger span:nth-child(3) { top: 16px; }
+.burger span:nth-child(1) { top: 2px; }
+.burger span:nth-child(2) { top: 10px; }
+.burger span:nth-child(3) { top: 18px; }
 
 .burger.active span:nth-child(1) {
-    top: 8px;
+    top: 10px;
     transform: rotate(135deg);
 }
 
@@ -125,7 +127,7 @@ nav {
 }
 
 .burger.active span:nth-child(3) {
-    top: 8px;
+    top: 10px;
     transform: rotate(-135deg);
 }
 
@@ -305,9 +307,13 @@ a:focus-visible,
 }
 
 .lang-switch {
-    display: block;
-    width: 24px;
-    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 24px;
+    width: 28px;
+    height: 18px;
     border-radius: 2px;
     transition: var(--transition);
     border: 2px solid transparent;

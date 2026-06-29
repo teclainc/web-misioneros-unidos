@@ -44,6 +44,7 @@ function initI18n() {
     document.addEventListener('click', e => {
         const switcher = e.target.closest('.lang-switch');
         if (switcher) {
+            e.preventDefault();
             const lang = switcher.getAttribute('data-lang');
             updateLanguage(lang);
         }

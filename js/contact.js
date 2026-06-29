@@ -6,23 +6,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contactForm = document.getElementById('contactForm');
     const formResponse = document.getElementById('formResponse');
+    const errorSummary = document.getElementById('error-summary');
 
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             let isValid = true;
+            const errors = [];
             const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
 
             inputs.forEach(input => {
                 const group = input.parentElement;
+                const label = group.querySelector('label').textContent;
                 if (!input.value.trim()) {
                     group.classList.add('error');
                     input.setAttribute('aria-invalid', 'true');
+                    errors.push(`${label} es obligatorio`);
                     isValid = false;
                 } else if (input.type === 'email' && !validateEmail(input.value)) {
                     group.classList.add('error');
                     input.setAttribute('aria-invalid', 'true');
+                    errors.push(`${label} no es válido`);
                     isValid = false;
                 } else {
                     group.classList.remove('error');
@@ -31,10 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!isValid) {
-                const firstError = contactForm.querySelector('[aria-invalid="true"]');
-                if (firstError) firstError.focus();
+                errorSummary.hidden = false;
+                errorSummary.innerHTML = `<strong>${errors.length} error(es) encontrado(s):</strong><ul>${errors.map(e => `<li>${e}</li>`).join('')}</ul>`;
+                errorSummary.focus();
                 return;
             }
+
+            errorSummary.hidden = true;
+            errorSummary.innerHTML = '';
                 // Collect form data
                 const formData = {
                     name: document.getElementById('name').value,
@@ -45,9 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 // Update UI to sending state
-                formResponse.textContent = 'Enviando mensaje...';
-                formResponse.className = 'form-response success';
-                formResponse.style.display = 'block';
+                formResponse.textContent = '';
+                requestAnimationFrame(() => {
+                    formResponse.textContent = 'Enviando mensaje...';
+                    formResponse.className = 'form-response success';
+                    formResponse.style.display = 'block';
+                });
 
                 try {
                     // Send data to Supabase
