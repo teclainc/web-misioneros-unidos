@@ -26,6 +26,8 @@ async function updateLanguage(lang) {
         });
 
         document.documentElement.lang = lang;
+        const mainContent = document.getElementById('main-content');
+        if (mainContent) mainContent.setAttribute('lang', lang);
         localStorage.setItem('preferredLang', lang);
         
         document.querySelectorAll('.lang-switch').forEach(btn => {

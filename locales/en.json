@@ -118,6 +118,8 @@
         "photos_title": "Photographs",
         "photos_subtitle": "Missions, social aid and community",
         "videos_title": "Videos",
-        "videos_subtitle": "Testimonies and chronicles of our missions"
+        "videos_subtitle": "Testimonies and chronicles of our missions",
+        "transcript_title": "Captions & transcripts",
+        "transcript_text": "Automatic captions are available on each video through YouTube. Enable them using the CC button in the player."
     }
 }

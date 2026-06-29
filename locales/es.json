@@ -118,6 +118,8 @@
         "photos_title": "Fotografías",
         "photos_subtitle": "Misiones, ayuda social y comunidad",
         "videos_title": "Videos",
-        "videos_subtitle": "Testimonios y crónicas de nuestras misiones"
+        "videos_subtitle": "Testimonios y crónicas de nuestras misiones",
+        "transcript_title": "Subtítulos y transcripciones",
+        "transcript_text": "Los subtítulos automáticos están disponibles en cada video a través de YouTube. Actívalos con el botón CC del reproductor."
     }
 }
