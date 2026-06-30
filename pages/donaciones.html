@@ -34,6 +34,7 @@
     }
     </script>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/donaciones.css">
 </head>
 <body>
@@ -78,6 +79,15 @@
                 <p class="hero-content-desc" data-i18n="donations.hero_desc">Cada donación, sin importar el tamaño, se convierte en alimento, ropa y esperanza para quien más lo necesita.</p>
             </div>
         </section>
+
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Miga de pan">
+                <ol>
+                    <li><a href="/" data-i18n="breadcrumb.home">Inicio</a></li>
+                    <li aria-current="page" data-i18n="breadcrumb.donaciones">Donaciones</li>
+                </ol>
+            </nav>
+        </div>
         
         <section class="why-donate section-padding">
             <div class="container">
@@ -86,26 +96,26 @@
                     <p data-i18n="donations.why_subtitle">Transparencia total en cada aporte</p>
                 </div>
                 <div class="usage-grid">
-                    <div class="usage-card">
-                        <div class="usage-icon" aria-hidden="true"></div>
-                        <h3 data-i18n="donations.card_food_title">Alimentación</h3>
-                        <p data-i18n="donations.card_food_text">Compra de alimentos no perecederos y armado de bolsas alimentarias para familias en situación de calle y vulnerabilidad.</p>
-                    </div>
-                    <div class="usage-card">
-                        <div class="usage-icon" aria-hidden="true"></div>
-                        <h3 data-i18n="donations.card_clothing_title">Vestimenta y Abrigo</h3>
-                        <p data-i18n="donations.card_clothing_text">Adquisición de ropa, calzado y frazadas, especialmente durante los meses de invierno para proteger a los más desamparados.</p>
-                    </div>
-                    <div class="usage-card">
-                        <div class="usage-icon" aria-hidden="true"></div>
-                        <h3 data-i18n="donations.card_health_title">Salud y Medicina</h3>
-                        <p data-i18n="donations.card_health_text">Apoyo en la compra de medicamentos básicos y facilitación de turnos médicos para personas sin cobertura sanitaria.</p>
-                    </div>
-                    <div class="usage-card">
-                        <div class="usage-icon" aria-hidden="true"></div>
-                        <h3 data-i18n="donations.card_missions_title">Misiones Sociales</h3>
-                        <p data-i18n="donations.card_missions_text">Logística y traslado de voluntarios y materiales a zonas críticas para llevar ayuda directa y apoyo espiritual.</p>
-                    </div>
+                     <div class="usage-card hover-lift reveal-scale reveal-delay-1">
+                         <div class="usage-icon" aria-hidden="true"></div>
+                         <h3 data-i18n="donations.card_food_title">Alimentación</h3>
+                         <p data-i18n="donations.card_food_text">Compra de alimentos no perecederos y armado de bolsas alimentarias para familias en situación de calle y vulnerabilidad.</p>
+                     </div>
+                     <div class="usage-card hover-lift reveal-scale reveal-delay-2">
+                         <div class="usage-icon" aria-hidden="true"></div>
+                         <h3 data-i18n="donations.card_clothing_title">Vestimenta y Abrigo</h3>
+                         <p data-i18n="donations.card_clothing_text">Adquisición de ropa, calzado y frazadas, especialmente durante los meses de invierno para proteger a los más desamparados.</p>
+                     </div>
+                     <div class="usage-card hover-lift reveal-scale reveal-delay-3">
+                         <div class="usage-icon" aria-hidden="true"></div>
+                         <h3 data-i18n="donations.card_health_title">Salud y Medicina</h3>
+                         <p data-i18n="donations.card_health_text">Apoyo en la compra de medicamentos básicos y facilitación de turnos médicos para personas sin cobertura sanitaria.</p>
+                     </div>
+                     <div class="usage-card hover-lift reveal-scale reveal-delay-4">
+                         <div class="usage-icon" aria-hidden="true"></div>
+                         <h3 data-i18n="donations.card_missions_title">Misiones Sociales</h3>
+                         <p data-i18n="donations.card_missions_text">Logística y traslado de voluntarios y materiales a zonas críticas para llevar ayuda directa y apoyo espiritual.</p>
+                     </div>
                 </div>
             </div>
         </section>
@@ -117,15 +127,15 @@
                     <p data-i18n="donations.impact_subtitle">Mira lo que puedes lograr</p>
                 </div>
                 <div class="examples-grid">
-                    <div class="example-item">
+                    <div class="example-item reveal reveal-delay-1 hover-lift">
                         <h3 data-i18n="donations.example_1_title">$15.000 ARS</h3>
                         <p data-i18n="donations.example_1_text">Puede proveer una bolsa de alimentos básica para una familia durante una semana.</p>
                     </div>
-                    <div class="example-item">
+                    <div class="example-item reveal reveal-delay-1 hover-lift">
                         <h3 data-i18n="donations.example_2_title">$50.000 ARS</h3>
                         <p data-i18n="donations.example_2_text">Permite equipar a un niño con ropa de invierno y calzado adecuado.</p>
                     </div>
-                    <div class="example-item">
+                    <div class="example-item reveal reveal-delay-1 hover-lift">
                         <h3 data-i18n="donations.example_3_title">$100.000 ARS</h3>
                         <p data-i18n="donations.example_3_text">Contribuye significativamente al financiamiento de una misión social completa en una zona vulnerable.</p>
                     </div>
@@ -140,7 +150,7 @@
                     <p data-i18n="donations.how_subtitle">Elige la opción que más te convenga</p>
                 </div>
                 <div class="methods-grid">
-                    <div class="method-card">
+                    <div class="method-card reveal-scale reveal-delay-1 hover-glow">
                         <div class="method-header">
                             <h3 data-i18n="donations.method_bank_title">Transferencia Bancaria</h3>
                             <span class="tag" data-i18n="donations.method_bank_tag">Recomendado</span>
@@ -150,14 +160,14 @@
                         <p data-i18n="donations.method_bank_owner">Titular: Asociacion Civil Centro de Misioneros Unidos de Isidro Casanova</p>
                         <a href="#" id="copy-cvu-btn" class="btn btn-outline" style="width: 100%;" role="button" data-i18n="donations.method_bank_btn">Copiar CVU</a>
                     </div>
-                    <div class="method-card">
+                    <div class="method-card reveal-scale reveal-delay-1 hover-glow">
                         <h3 data-i18n="donations.method_paypal_title">PayPal</h3>
                         <p data-i18n="donations.method_paypal_text">Puedes realizar tu donación de forma rápida y segura a través de nuestra cuenta oficial de PayPal.</p>
                         <p data-i18n="donations.method_paypal_link">Link: paypal.me/misionerosunidos</p>
                         <p data-i18n="donations.method_paypal_owner">Titular: Asociacion Civil Centro de Misioneros Unidos de Isidro Casanova</p>
                         <a href="https://paypal.me/misionerosunidos" class="btn btn-outline" style="width: 100%;" target="_blank" data-i18n="donations.method_paypal_btn">Donar vía PayPal</a>
                     </div>
-                    <div class="method-card">
+                    <div class="method-card reveal-scale reveal-delay-1 hover-glow">
                         <h3 data-i18n="donations.method_species_title">Donaciones en Especie</h3>
                         <p data-i18n="donations.method_species_text">Recibimos ropa, alimentos no perecederos y artículos de higiene.</p>
                         <p data-i18n="donations.method_species_location">Lugar: Av. Juan Manuel de Rosas 7840, Isidro Casanova</p>

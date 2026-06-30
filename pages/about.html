@@ -34,6 +34,7 @@
     }
     </script>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
@@ -78,13 +79,22 @@
                 <p class="hero-content-desc" data-i18n="about.hero_desc">Comprometidos con el servicio y la transformación social.</p>
             </div>
         </section>
+
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Miga de pan">
+                <ol>
+                    <li><a href="/" data-i18n="breadcrumb.home">Inicio</a></li>
+                    <li aria-current="page" data-i18n="breadcrumb.about">Nosotros</li>
+                </ol>
+            </nav>
+        </div>
         
         <section class="full-history section-padding">
             <div class="container">
                 <div class="section-title">
                     <h2 data-i18n="about.history_title">Nuestra Historia</h2>
                 </div>
-                <div class="history-text">
+                <div class="history-text reveal">
                     <p data-i18n="about.history_text_1">Desde el año 2011, Misioneros Unidos nació de un deseo profundo de servir a los más necesitados en Isidro Casanova y sus alrededores. Lo que comenzó como una iniciativa local, impulsada por la fe y el amor al prójimo, ha crecido hasta convertirse en una Asociación Civil dedicada a la acción social directa.</p>
                     <p data-i18n="about.history_text_2">A lo largo de los años, hemos enfrentado desafíos, pero la satisfacción de ver vidas transformadas ha sido nuestro motor. Nos hemos especializado en misiones que no solo llevan ayuda material, sino también apoyo espiritual y emocional, reconociendo que la verdadera transformación comienza en el corazón.</p>
                     <p data-i18n="about.history_text_3">Hoy, Misioneros Unidos es un referente de solidaridad en nuestra comunidad, coordinando esfuerzos entre voluntarios y donantes para llegar a los rincones más olvidados.</p>
@@ -98,12 +108,12 @@
                     <h2 data-i18n="about.vision_mission_title">Misión y Visión</h2>
                 </div>
                 <div class="vm-grid">
-                        <div class="vm-card">
+                        <div class="vm-card reveal-scale reveal-delay-1 hover-lift">
                             <div class="vm-icon" aria-hidden="true"></div>
                             <h3 data-i18n="about.mission_title">Nuestra Misión</h3>
                             <p data-i18n="about.mission_text">Brindar asistencia integral a personas en situación de vulnerabilidad, promoviendo la dignidad humana a través de misiones sociales, apoyo alimentario y acompañamiento espiritual.</p>
                         </div>
-                        <div class="vm-card">
+                        <div class="vm-card reveal-scale reveal-delay-1 hover-lift">
                             <div class="vm-icon" aria-hidden="true"></div>
                             <h3 data-i18n="about.vision_title">Nuestra Visión</h3>
                             <p data-i18n="about.vision_text">Ser una organización líder en acción social y misiones, reconocida por su transparencia, eficiencia y capacidad de generar un impacto positivo y sostenible en la sociedad.</p>
@@ -115,10 +125,10 @@
             <section class="founder section-padding">
                 <div class="container">
                     <div class="founder-grid">
-                        <div class="founder-img">
+                        <div class="founder-img reveal-left">
                             <img src="../assets/images/5.jpg" alt="Jonatan Pereda" width="400" height="500" loading="lazy" onerror="this.src='https://via.placeholder.com/400x500?text=Jonatan+Pereda'">
                         </div>
-                        <div class="founder-text">
+                        <div class="founder-text reveal-right">
                             <h2 class="section-title" data-i18n="about.founder_title">Nuestro Fundador</h2>
                             <h3 data-i18n="about.founder_name">Jonatan Pereda</h3>
                             <p data-i18n="about.founder_text_1">Jonatan Pereda es el visionario detrás de Misioneros Unidos. Con una vocación inquebrantable por el servicio, Jonatan fundó el proyecto en 2011 con la convicción de que nadie debe sentirse solo en su lucha contra la pobreza y la desesperanza.</p>

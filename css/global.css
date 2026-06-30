@@ -449,3 +449,36 @@ a:focus-visible,
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 1rem 0 0;
+}
+
+.breadcrumb ol {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin: 0 0.5rem;
+    color: #aaa;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+    color: var(--text-color);
+    font-weight: 600;
+}

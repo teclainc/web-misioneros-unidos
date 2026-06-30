@@ -6,6 +6,13 @@
         "donaciones": "Donations",
         "contacto": "Contact"
     },
+    "breadcrumb": {
+        "home": "Home",
+        "about": "About Us",
+        "media": "Media",
+        "donaciones": "Donations",
+        "contacto": "Contact"
+    },
     "footer": {
         "title": "Misioneros Unidos",
         "description": "Bringing hope and love to our neighbors since 2011.",

@@ -56,6 +56,7 @@
     }
     </script>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -94,12 +95,12 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-        <section class="hero">
+        <section class="hero hero-pattern">
             <div class="container">
                 <div class="hero-content">
-                    <h1 data-i18n="index.hero_title">Llevando Esperanza a Quienes Más lo Necesitan</h1>
-                    <p data-i18n="index.hero_desc">Desde 2011, trabajamos incansablemente en misiones y ayuda social para transformar la realidad de nuestra comunidad y más allá.</p>
-                    <div class="hero-btns">
+                    <h1 class="animate-hero" data-i18n="index.hero_title">Llevando Esperanza a Quienes Más lo Necesitan</h1>
+                    <p class="animate-hero-sub" data-i18n="index.hero_desc">Desde 2011, trabajamos incansablemente en misiones y ayuda social para transformar la realidad de nuestra comunidad y más allá.</p>
+                    <div class="hero-btns animate-hero-cta">
                         <a href="pages/donaciones.html" class="btn btn-primary" data-i18n="index.hero_btn_donate">Donar ahora</a>
                         <a href="pages/about.html" class="btn btn-outline-white" data-i18n="index.hero_btn_about">Conocernos más</a>
                     </div>
@@ -110,13 +111,85 @@
         <section class="welcome section-padding">
             <div class="container">
                 <div class="welcome-grid">
-                    <div class="welcome-text">
+                    <div class="welcome-text reveal-left">
                         <h2 class="section-title" style="text-align: left;" data-i18n="index.welcome_title">Bienvenidos a Misioneros Unidos</h2>
                         <p data-i18n="index.welcome_text_1">Somos una organización dedicada al servicio desinteresado, impulsada por el amor y la fe. Nuestra misión es brindar apoyo material, espiritual y emocional a las familias más vulnerables, llevando un mensaje de esperanza y transformación.</p>
                         <p data-i18n="index.welcome_text_2">En Isidro Casanova y diversas regiones, hemos construido puentes de solidaridad que permiten que la ayuda llegue directamente a quienes realmente la necesitan.</p>
                     </div>
-                    <div class="welcome-img">
+                    <div class="welcome-img reveal-right">
                         <img src="assets/images/2.jpg" alt="Misioneros Unidos Ayudando" width="600" height="400" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Misioneros+Unidos'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-trip section-padding">
+            <div class="container">
+                <div class="mission-trip-content">
+                    <div class="mission-trip-text reveal">
+                         <h2 class="section-title" style="text-align: center; color: var(--white);" data-i18n="index.trip_title">Próximo Viaje Misionero: Salta 2026</h2>
+                         <p class="mission-trip-subtitle" data-i18n="index.trip_subtitle">Tratagal - Santa Victoria Este | 5 al 14 de Junio</p>
+                         
+                         <div id="countdown" class="countdown reveal-scale">
+                             <div class="countdown-item">
+                                 <span id="days">00</span>
+                                 <small data-i18n="index.countdown_days">Días</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="hours">00</span>
+                                 <small data-i18n="index.countdown_hours">Horas</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="minutes">00</span>
+                                 <small data-i18n="index.countdown_minutes">Minutos</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="seconds">00</span>
+                                 <small data-i18n="index.countdown_seconds">Segundos</small>
+                             </div>
+                         </div>
+ 
+                         <div class="mission-trip-btns">
+                             <a href="pages/donaciones.html" class="btn btn-primary" data-i18n="index.trip_btn_donate">Quiero donar</a>
+                             <a href="https://wa.me/5491156334578?text=Hola,%20me%20interesa%20sumarme%20al%20viaje%20misionero%20a%20Salta%202026.%20%C2%A1Me%20dan%20m%C3%A1s%20informaci%C3%B3n?" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="index.trip_btn_go">Quiero ir</a>
+                         </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-trip section-padding">
+            <div class="container">
+                <div class="mission-trip-content">
+                    <div class="mission-trip-text reveal">
+                         <h2 class="section-title" style="text-align: center; color: var(--white);" data-i18n="index.trip_title">Próximo Viaje Misionero: Salta 2026</h2>
+                         <p class="mission-trip-subtitle" data-i18n="index.trip_subtitle">Tratagal - Santa Victoria Este | 5 al 14 de Junio</p>
+                         
+                         <div id="countdown" class="countdown reveal-scale">
+                             <div class="countdown-item">
+                                 <span id="days">00</span>
+                                 <small data-i18n="index.countdown_days">Días</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="hours">00</span>
+                                 <small data-i18n="index.countdown_hours">Horas</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="minutes">00</span>
+                                 <small data-i18n="index.countdown_minutes">Minutos</small>
+                             </div>
+                             <div class="countdown-item">
+                                 <span id="seconds">00</span>
+                                 <small data-i18n="index.countdown_seconds">Segundos</small>
+                             </div>
+                         </div>
+ 
+                         <div class="mission-trip-btns">
+                             <a href="pages/donaciones.html" class="btn btn-primary" data-i18n="index.trip_btn_donate">Quiero donar</a>
+                             <a href="https://wa.me/5491156334578?text=Hola,%20me%20interesa%20sumarme%20al%20viaje%20misionero%20a%20Salta%202026.%20%C2%A1Me%20dan%20m%C3%A1s%20informaci%C3%B3n?" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="index.trip_btn_go">Quiero ir</a>
+                         </div>
+
                     </div>
                 </div>
             </div>
@@ -129,15 +202,15 @@
                      <p data-i18n="index.impact_subtitle">Resultados reales que cambian vidas</p>
                  </div>
                  <div class="impact-grid">
-                     <div class="impact-card">
+                     <div class="impact-card hover-lift reveal reveal-delay-1">
                          <h3 data-i18n="index.impact_card_1_title">+10 Años</h3>
                          <p data-i18n="index.impact_card_1_text">De experiencia en misiones y trabajo social.</p>
                      </div>
-                     <div class="impact-card">
+                     <div class="impact-card hover-lift reveal reveal-delay-1">
                          <h3 data-i18n="index.impact_card_2_title">Miles de Familias</h3>
                          <p data-i18n="index.impact_card_2_text">Asistidas a través de nuestros programas de ayuda.</p>
                      </div>
-                     <div class="impact-card">
+                     <div class="impact-card hover-lift reveal reveal-delay-1">
                          <h3 data-i18n="index.impact_card_3_title">Comunidad Unida</h3>
                          <p data-i18n="index.impact_card_3_text">Voluntarios comprometidos con la transformación social.</p>
                      </div>
@@ -146,7 +219,7 @@
             </div>
         </section>
 
-        <section class="video-section section-padding" style="background-color: #f9f9f9;">
+        <section class="video-section section-padding reveal" style="background-color: #f9f9f9;">
             <div class="container">
                  <div class="section-title">
                      <h2 data-i18n="index.video_title">Mira Nuestro Trabajo</h2>

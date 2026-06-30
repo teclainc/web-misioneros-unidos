@@ -34,6 +34,7 @@
     }
     </script>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
@@ -78,11 +79,20 @@
                 <p class="hero-content-desc" data-i18n="contact.hero_desc">Estamos aquí para escucharte, ya sea que quieras ayudar o necesites apoyo.</p>
             </div>
         </section>
+
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Miga de pan">
+                <ol>
+                    <li><a href="/" data-i18n="breadcrumb.home">Inicio</a></li>
+                    <li aria-current="page" data-i18n="breadcrumb.contacto">Contacto</li>
+                </ol>
+            </nav>
+        </div>
         
         <section class="contact-content section-padding">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-form-container">
+                    <div class="contact-form-container reveal-left">
                         <div id="error-summary" class="error-summary" role="alert" aria-live="assertive" hidden></div>
                         <form id="contactForm" novalidate>
                              <div class="form-group">
@@ -120,7 +130,7 @@
                     </div>
 
 
-                    <div class="contact-info">
+                    <div class="contact-info reveal-right">
                         <h2 class="section-title" data-i18n="contact.info_title">Información de Contacto</h2>
                         <div class="info-item">
                             <div class="info-icon">
