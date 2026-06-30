@@ -37,6 +37,9 @@
 }
 
 .welcome-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -99,6 +102,9 @@
     }
     .welcome-grid {
         grid-template-columns: 1fr;
+    }
+    .welcome-img img {
+        height: 250px;
     }
     .hero-btns {
         flex-direction: column;
