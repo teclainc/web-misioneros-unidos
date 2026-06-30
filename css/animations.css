@@ -197,6 +197,152 @@
     z-index: 1;
 }
 
+/* =============================================
+   Textures & Atmospheric Effects
+   ============================================= */
+
+/* --- SVG Grain / Noise Overlay --- */
+.grain-overlay {
+    position: relative;
+}
+
+.grain-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.grain-overlay > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Dot Pattern Background --- */
+.dot-pattern {
+    background-image: radial-gradient(circle, var(--primary-color) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.dot-pattern-light {
+    background-image: radial-gradient(circle, rgba(4, 117, 107, 0.12) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* --- Gradient Mesh Atmosphere --- */
+.gradient-mesh {
+    position: relative;
+}
+
+.gradient-mesh::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(4, 117, 107, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(4, 117, 107, 0.04) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 80%, rgba(5, 159, 160, 0.05) 0%, transparent 45%);
+    pointer-events: none;
+}
+
+/* --- Diagonal Stripe Section --- */
+.diagonal-stripe {
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-stripe::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        rgba(4, 117, 107, 0.02) 20px,
+        rgba(4, 117, 107, 0.02) 21px
+    );
+    pointer-events: none;
+}
+
+/* =============================================
+   Distinctive Card Designs
+   ============================================= */
+
+/* --- Card with Gradient Top Border --- */
+.card-accent {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light), var(--primary-color));
+    border-radius: 10px 10px 0 0;
+}
+
+/* --- Card with Subtle Corner Decoration --- */
+.card-corner {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-corner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, transparent 50%, rgba(4, 117, 107, 0.06) 50%);
+    border-radius: 0 0 10px 0;
+}
+
+/* --- Card with Colored Shadow --- */
+.card-shadow-brand {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06),
+        0 1px 3px rgba(4, 117, 107, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-shadow-brand:hover {
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(4, 117, 107, 0.18);
+    transform: translateY(-4px);
+}
+
+/* --- Card with Left Accent Line --- */
+.card-left-line {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(180deg, var(--primary-color), var(--primary-light)) 1;
+}
+
+/* --- Card with Glow Border on Hover --- */
+.card-glow-border {
+    transition: box-shadow 0.3s ease;
+}
+
+.card-glow-border:hover {
+    box-shadow: 0 0 0 2px rgba(4, 117, 107, 0.3), 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Reduced motion: disable animations */
 @media (prefers-reduced-motion: reduce) {
     .reveal,
